@@ -13,7 +13,8 @@
 				include_once('/common/logout.php'); 
 			}
 			else {
-		header("Location: /Party/login.php");
+				//for addinf login
+				header("Location: /Party/login.php");
 	}
 		?>
 		<form method="post" autocomplete="off" action="/party/adduser.php">
