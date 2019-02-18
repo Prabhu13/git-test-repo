@@ -1,0 +1,33 @@
+
+
+body {
+	background-image:url("../Images/party-background.jpg");
+	background-position:top;
+	background-repeat:no-repeat;
+	background-attachment:fixed;
+	background-size:100%;
+	
+	
+}
+form {
+	color:blue;
+	background-color:light-blue;
+	
+}
+.heading {
+	height:200px;
+	text-align:center;
+	border:200px 40px;
+    color:#000000;
+	opacity:0.5;
+	background-color:#ffffff;
+	
+}
+h1 {
+	color:blue;
+	
+}
+table {
+	text-align:center;
+	color:red;
+  }

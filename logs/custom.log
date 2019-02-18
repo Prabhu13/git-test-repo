@@ -1,0 +1,922 @@
+2018-09-05 14:14:49 Test
+2018-09-05 14:20:06 select name, email_id from users where email_id='a'  and pwd = 'a'
+2018-09-05 14:20:06 SELECT u.id, u.name, IFNULL(COUNT(1), 0) AS counter 
+					FROM users u 
+					LEFT JOIN track t ON u.id = t.users_id 
+					WHERE working_status = 1 AND party_given = 1 
+					GROUP BY u.id 
+					ORDER BY u.id ASC
+2018-09-05 14:24:01 select name, email_id from users where email_id='a'  and pwd = 'a'
+2018-09-05 14:24:01 SELECT u.id, u.name, IFNULL(COUNT(1), 0) AS counter 
+					FROM users u 
+					LEFT JOIN track t ON u.id = t.users_id 
+					WHERE working_status = 1 AND party_given = 1 
+					GROUP BY u.id 
+					ORDER BY u.id ASC
+2018-09-05 14:24:05 select name, email_id from users where email_id='a'  and pwd = 'a'
+2018-09-05 14:24:05 SELECT u.id, u.name, IFNULL(COUNT(1), 0) AS counter 
+					FROM users u 
+					LEFT JOIN track t ON u.id = t.users_id 
+					WHERE working_status = 1 AND party_given = 1 
+					GROUP BY u.id 
+					ORDER BY u.id ASC
+2018-09-05 14:24:28 INSERT INTO users (name, email_id, user_type, pwd) 
+			VALUES ('Rinisha','rinisha','2','123')
+2018-09-05 14:24:28 SELECT u.id, u.name, IFNULL(COUNT(1), 0) AS counter 
+					FROM users u 
+					LEFT JOIN track t ON u.id = t.users_id 
+					WHERE working_status = 1 AND party_given = 1 
+					GROUP BY u.id 
+					ORDER BY u.id ASC
+2018-09-05 14:24:34 SELECT * FROM users WHERE working_status = 1
+2018-09-05 14:24:55 SELECT u.id, u.name, IFNULL(COUNT(1), 0) AS counter 
+					FROM users u 
+					LEFT JOIN track t ON u.id = t.users_id 
+					WHERE working_status = 1 AND party_given = 1 
+					GROUP BY u.id 
+					ORDER BY u.id ASC
+2018-09-05 14:25:15 select name, email_id from users where email_id='a'  and pwd = 'a'
+2018-09-05 14:25:15 SELECT u.id, u.name, IFNULL(COUNT(1), 0) AS counter 
+					FROM users u 
+					LEFT JOIN track t ON u.id = t.users_id 
+					WHERE working_status = 1 AND party_given = 1 
+					GROUP BY u.id 
+					ORDER BY u.id ASC
+2018-09-05 14:25:29 SELECT * 
+				FROM users AS u 
+				LEFT JOIN track AS t on u.id = t.users_id 
+				WHERE users_id = 2 
+				AND party_given = 1
+2018-09-05 14:25:29 SELECT * 
+				FROM users AS u 
+				LEFT JOIN track AS t on u.id = t.users_id 
+				WHERE users_id =  
+				AND party_given = 1
+2018-09-05 14:26:21 SELECT * 
+				FROM users AS u 
+				LEFT JOIN track AS t on u.id = t.users_id 
+				WHERE users_id = 2 
+				AND party_given = 1
+2018-09-05 14:26:21 SELECT * 
+				FROM users AS u 
+				LEFT JOIN track AS t on u.id = t.users_id 
+				WHERE users_id =  
+				AND party_given = 1
+2018-09-05 14:26:22 UPDATE track 
+					SET party_given = 0 
+					WHERE id IN (0)
+2018-09-05 14:26:49 select name, email_id from users where email_id='a'  and pwd = 'a'
+2018-09-05 14:26:49 SELECT u.id, u.name, IFNULL(COUNT(1), 0) AS counter 
+					FROM users u 
+					LEFT JOIN track t ON u.id = t.users_id 
+					WHERE working_status = 1 AND party_given = 1 
+					GROUP BY u.id 
+					ORDER BY u.id ASC
+2018-09-05 14:26:52 SELECT * 
+				FROM users AS u 
+				LEFT JOIN track AS t on u.id = t.users_id 
+				WHERE users_id = 2 
+				AND party_given = 1
+2018-09-05 14:26:52 SELECT * 
+				FROM users AS u 
+				LEFT JOIN track AS t on u.id = t.users_id 
+				WHERE users_id =  
+				AND party_given = 1
+2018-09-05 14:26:53 UPDATE track 
+					SET party_given = 0 
+					WHERE id IN (0)
+2018-09-05 14:26:56 SELECT u.id, u.name, IFNULL(COUNT(1), 0) AS counter 
+					FROM users u 
+					LEFT JOIN track t ON u.id = t.users_id 
+					WHERE working_status = 1 AND party_given = 1 
+					GROUP BY u.id 
+					ORDER BY u.id ASC
+2018-09-05 14:26:58 SELECT * 
+				FROM users AS u 
+				LEFT JOIN track AS t on u.id = t.users_id 
+				WHERE users_id = 2 
+				AND party_given = 1
+2018-09-05 14:26:58 SELECT * 
+				FROM users AS u 
+				LEFT JOIN track AS t on u.id = t.users_id 
+				WHERE users_id =  
+				AND party_given = 1
+2018-09-05 14:27:00 UPDATE track 
+					SET party_given = 0 
+					WHERE id IN (0)
+2018-09-06 07:04:07 SELECT * FROM users WHERE working_status = 1
+2018-09-07 07:36:50 select name, email_id from users where email_id='a'  and pwd = 'a'
+2018-09-07 07:36:50 SELECT u.id, u.name, IFNULL(COUNT(1), 0) AS counter 
+					FROM users u 
+					LEFT JOIN track t ON u.id = t.users_id 
+					WHERE working_status = 1 AND party_given = 1 
+					GROUP BY u.id 
+					ORDER BY u.id ASC
+2018-09-07 07:36:54 SELECT * FROM users WHERE working_status = 1
+2018-09-07 07:37:54 SELECT * FROM users WHERE working_status = 1
+2018-09-07 07:37:54 INSERT INTO track (users_id, date_of_late, faultType, reason) 
+			VALUES ('5','2018-09-07','Late','Late in gaurav's meeting at 10:10am')
+2018-09-07 07:38:09 SELECT * FROM users WHERE working_status = 1
+2018-09-07 07:38:10 SELECT u.id, u.name, IFNULL(COUNT(1), 0) AS counter 
+					FROM users u 
+					LEFT JOIN track t ON u.id = t.users_id 
+					WHERE working_status = 1 AND party_given = 1 
+					GROUP BY u.id 
+					ORDER BY u.id ASC
+2018-09-07 07:38:12 SELECT * FROM users WHERE working_status = 1
+2018-09-07 07:38:51 SELECT * FROM users WHERE working_status = 1
+2018-09-07 07:38:51 INSERT INTO track (users_id, date_of_late, faultType, reason) 
+			VALUES ('1','2018-09-07','Late','Late for gaurav's meeting at 10:00am')
+2018-09-07 07:38:55 SELECT * FROM users WHERE working_status = 1
+2018-09-07 07:38:55 SELECT u.id, u.name, IFNULL(COUNT(1), 0) AS counter 
+					FROM users u 
+					LEFT JOIN track t ON u.id = t.users_id 
+					WHERE working_status = 1 AND party_given = 1 
+					GROUP BY u.id 
+					ORDER BY u.id ASC
+2018-09-07 07:38:57 SELECT u.id, u.name, IFNULL(COUNT(1), 0) AS counter 
+					FROM users u 
+					LEFT JOIN track t ON u.id = t.users_id 
+					WHERE working_status = 1 AND party_given = 1 
+					GROUP BY u.id 
+					ORDER BY u.id ASC
+2018-09-07 07:38:58 SELECT u.id, u.name, IFNULL(COUNT(1), 0) AS counter 
+					FROM users u 
+					LEFT JOIN track t ON u.id = t.users_id 
+					WHERE working_status = 1 AND party_given = 1 
+					GROUP BY u.id 
+					ORDER BY u.id ASC
+2018-09-07 07:38:58 SELECT u.id, u.name, IFNULL(COUNT(1), 0) AS counter 
+					FROM users u 
+					LEFT JOIN track t ON u.id = t.users_id 
+					WHERE working_status = 1 AND party_given = 1 
+					GROUP BY u.id 
+					ORDER BY u.id ASC
+2018-09-07 07:38:59 SELECT u.id, u.name, IFNULL(COUNT(1), 0) AS counter 
+					FROM users u 
+					LEFT JOIN track t ON u.id = t.users_id 
+					WHERE working_status = 1 AND party_given = 1 
+					GROUP BY u.id 
+					ORDER BY u.id ASC
+2018-09-07 07:38:59 SELECT u.id, u.name, IFNULL(COUNT(1), 0) AS counter 
+					FROM users u 
+					LEFT JOIN track t ON u.id = t.users_id 
+					WHERE working_status = 1 AND party_given = 1 
+					GROUP BY u.id 
+					ORDER BY u.id ASC
+2018-09-07 07:38:59 SELECT u.id, u.name, IFNULL(COUNT(1), 0) AS counter 
+					FROM users u 
+					LEFT JOIN track t ON u.id = t.users_id 
+					WHERE working_status = 1 AND party_given = 1 
+					GROUP BY u.id 
+					ORDER BY u.id ASC
+2018-09-07 07:38:59 SELECT u.id, u.name, IFNULL(COUNT(1), 0) AS counter 
+					FROM users u 
+					LEFT JOIN track t ON u.id = t.users_id 
+					WHERE working_status = 1 AND party_given = 1 
+					GROUP BY u.id 
+					ORDER BY u.id ASC
+2018-09-07 07:38:59 SELECT u.id, u.name, IFNULL(COUNT(1), 0) AS counter 
+					FROM users u 
+					LEFT JOIN track t ON u.id = t.users_id 
+					WHERE working_status = 1 AND party_given = 1 
+					GROUP BY u.id 
+					ORDER BY u.id ASC
+2018-09-07 07:39:00 SELECT u.id, u.name, IFNULL(COUNT(1), 0) AS counter 
+					FROM users u 
+					LEFT JOIN track t ON u.id = t.users_id 
+					WHERE working_status = 1 AND party_given = 1 
+					GROUP BY u.id 
+					ORDER BY u.id ASC
+2018-09-07 07:39:00 SELECT u.id, u.name, IFNULL(COUNT(1), 0) AS counter 
+					FROM users u 
+					LEFT JOIN track t ON u.id = t.users_id 
+					WHERE working_status = 1 AND party_given = 1 
+					GROUP BY u.id 
+					ORDER BY u.id ASC
+2018-09-07 07:39:06 SELECT * FROM users WHERE working_status = 1
+2018-09-07 07:39:23 SELECT * FROM users WHERE working_status = 1
+2018-09-07 07:39:23 INSERT INTO track (users_id, date_of_late, faultType, reason) 
+			VALUES ('5','2018-09-07','Late','Late for gaurav meeting')
+2018-09-07 07:39:23 SELECT u.id, u.name, IFNULL(COUNT(1), 0) AS counter 
+					FROM users u 
+					LEFT JOIN track t ON u.id = t.users_id 
+					WHERE working_status = 1 AND party_given = 1 
+					GROUP BY u.id 
+					ORDER BY u.id ASC
+2018-09-07 07:39:35 SELECT * 
+				FROM users AS u 
+				LEFT JOIN track AS t on u.id = t.users_id 
+				WHERE users_id = 5 
+				AND party_given = 1
+2018-09-07 07:39:35 SELECT * 
+				FROM users AS u 
+				LEFT JOIN track AS t on u.id = t.users_id 
+				WHERE users_id =  
+				AND party_given = 1
+2018-09-07 07:39:51 UPDATE track 
+					SET party_given = 0 
+					WHERE id IN (0)
+2018-09-07 07:39:54 SELECT u.id, u.name, IFNULL(COUNT(1), 0) AS counter 
+					FROM users u 
+					LEFT JOIN track t ON u.id = t.users_id 
+					WHERE working_status = 1 AND party_given = 1 
+					GROUP BY u.id 
+					ORDER BY u.id ASC
+2018-09-07 07:39:58 SELECT * 
+				FROM users AS u 
+				LEFT JOIN track AS t on u.id = t.users_id 
+				WHERE users_id = 5 
+				AND party_given = 1
+2018-09-07 07:39:58 SELECT * 
+				FROM users AS u 
+				LEFT JOIN track AS t on u.id = t.users_id 
+				WHERE users_id =  
+				AND party_given = 1
+2018-09-07 07:39:59 UPDATE track 
+					SET party_given = 0 
+					WHERE id IN (0)
+2018-09-07 07:44:39 SELECT * 
+				FROM users AS u 
+				LEFT JOIN track AS t on u.id = t.users_id 
+				WHERE users_id = 5 
+				AND party_given = 1
+2018-09-07 07:44:39 SELECT * 
+				FROM users AS u 
+				LEFT JOIN track AS t on u.id = t.users_id 
+				WHERE users_id =  
+				AND party_given = 1
+2018-09-07 07:44:45 UPDATE track 
+					SET party_given = 0 
+					WHERE id IN (0)
+2018-09-07 07:46:07 UPDATE track 
+					SET party_given = 0 
+					WHERE id IN (0)
+2018-09-07 07:46:17 UPDATE track 
+					SET party_given = 0 
+					WHERE id IN (0)
+2018-09-07 07:46:18 UPDATE track 
+					SET party_given = 0 
+					WHERE id IN (0)
+2018-09-07 07:48:24 UPDATE track 
+					SET party_given = 0 
+					WHERE id IN (0)
+2018-09-07 07:48:25 SELECT * 
+				FROM users AS u 
+				LEFT JOIN track AS t on u.id = t.users_id 
+				WHERE users_id = 5 
+				AND party_given = 1
+2018-09-07 07:48:25 SELECT u.id, u.name, IFNULL(COUNT(1), 0) AS counter 
+					FROM users u 
+					LEFT JOIN track t ON u.id = t.users_id 
+					WHERE working_status = 1 AND party_given = 1 
+					GROUP BY u.id 
+					ORDER BY u.id ASC
+2018-09-07 07:48:27 select name, email_id from users where email_id='a'  and pwd = 'a'
+2018-09-07 07:48:27 SELECT u.id, u.name, IFNULL(COUNT(1), 0) AS counter 
+					FROM users u 
+					LEFT JOIN track t ON u.id = t.users_id 
+					WHERE working_status = 1 AND party_given = 1 
+					GROUP BY u.id 
+					ORDER BY u.id ASC
+2018-09-07 07:48:32 SELECT u.id, u.name, IFNULL(COUNT(1), 0) AS counter 
+					FROM users u 
+					LEFT JOIN track t ON u.id = t.users_id 
+					WHERE working_status = 1 AND party_given = 1 
+					GROUP BY u.id 
+					ORDER BY u.id ASC
+2018-09-07 07:48:33 SELECT * 
+				FROM users AS u 
+				LEFT JOIN track AS t on u.id = t.users_id 
+				WHERE users_id = 5 
+				AND party_given = 1
+2018-09-07 07:48:33 SELECT u.id, u.name, IFNULL(COUNT(1), 0) AS counter 
+					FROM users u 
+					LEFT JOIN track t ON u.id = t.users_id 
+					WHERE working_status = 1 AND party_given = 1 
+					GROUP BY u.id 
+					ORDER BY u.id ASC
+2018-09-07 07:48:34 SELECT * FROM users WHERE working_status = 1
+2018-09-07 07:48:34 SELECT u.id, u.name, IFNULL(COUNT(1), 0) AS counter 
+					FROM users u 
+					LEFT JOIN track t ON u.id = t.users_id 
+					WHERE working_status = 1 AND party_given = 1 
+					GROUP BY u.id 
+					ORDER BY u.id ASC
+2018-09-07 07:48:39 select name, email_id from users where email_id='a'  and pwd = 'a'
+2018-09-07 07:48:39 SELECT u.id, u.name, IFNULL(COUNT(1), 0) AS counter 
+					FROM users u 
+					LEFT JOIN track t ON u.id = t.users_id 
+					WHERE working_status = 1 AND party_given = 1 
+					GROUP BY u.id 
+					ORDER BY u.id ASC
+2018-09-07 07:48:43 SELECT * FROM users WHERE working_status = 1
+2018-09-07 07:48:55 SELECT u.id, u.name, IFNULL(COUNT(1), 0) AS counter 
+					FROM users u 
+					LEFT JOIN track t ON u.id = t.users_id 
+					WHERE working_status = 1 AND party_given = 1 
+					GROUP BY u.id 
+					ORDER BY u.id ASC
+2018-09-07 07:49:12 SELECT * 
+				FROM users AS u 
+				LEFT JOIN track AS t on u.id = t.users_id 
+				WHERE users_id = 2 
+				AND party_given = 1
+2018-09-07 07:49:12 SELECT * 
+				FROM users AS u 
+				LEFT JOIN track AS t on u.id = t.users_id 
+				WHERE users_id =  
+				AND party_given = 1
+2018-09-07 07:49:17 UPDATE track 
+					SET party_given = 0 
+					WHERE id IN (0)
+2018-09-07 07:49:20 SELECT * 
+				FROM users AS u 
+				LEFT JOIN track AS t on u.id = t.users_id 
+				WHERE users_id = 2 
+				AND party_given = 1
+2018-09-07 07:49:20 SELECT * 
+				FROM users AS u 
+				LEFT JOIN track AS t on u.id = t.users_id 
+				WHERE users_id =  
+				AND party_given = 1
+2018-09-07 07:49:21 SELECT u.id, u.name, IFNULL(COUNT(1), 0) AS counter 
+					FROM users u 
+					LEFT JOIN track t ON u.id = t.users_id 
+					WHERE working_status = 1 AND party_given = 1 
+					GROUP BY u.id 
+					ORDER BY u.id ASC
+2018-09-07 07:50:12 select name, email_id from users where email_id='a'  and pwd = 'a'
+2018-09-07 07:50:12 SELECT u.id, u.name, IFNULL(COUNT(1), 0) AS counter 
+					FROM users u 
+					LEFT JOIN track t ON u.id = t.users_id 
+					WHERE working_status = 1 AND party_given = 1 
+					GROUP BY u.id 
+					ORDER BY u.id ASC
+2018-09-07 07:58:17 select name, email_id,user_type from users where email_id='a'  and pwd = 'a'
+2018-09-07 07:58:17 SELECT u.id, u.name, IFNULL(COUNT(1), 0) AS counter 
+					FROM users u 
+					LEFT JOIN track t ON u.id = t.users_id 
+					WHERE working_status = 1 AND party_given = 1 
+					GROUP BY u.id 
+					ORDER BY u.id ASC
+2018-09-07 07:59:16 select name, email_id,user_type from users where email_id='a'  and pwd = 'a'
+2018-09-07 07:59:16 SELECT u.id, u.name, IFNULL(COUNT(1), 0) AS counter 
+					FROM users u 
+					LEFT JOIN track t ON u.id = t.users_id 
+					WHERE working_status = 1 AND party_given = 1 
+					GROUP BY u.id 
+					ORDER BY u.id ASC
+2018-09-07 07:59:20 SELECT u.id, u.name, IFNULL(COUNT(1), 0) AS counter 
+					FROM users u 
+					LEFT JOIN track t ON u.id = t.users_id 
+					WHERE working_status = 1 AND party_given = 1 
+					GROUP BY u.id 
+					ORDER BY u.id ASC
+2018-09-07 07:59:23 SELECT u.id, u.name, IFNULL(COUNT(1), 0) AS counter 
+					FROM users u 
+					LEFT JOIN track t ON u.id = t.users_id 
+					WHERE working_status = 1 AND party_given = 1 
+					GROUP BY u.id 
+					ORDER BY u.id ASC
+2018-09-07 07:59:39 select name, email_id,user_type from users where email_id='b'  and pwd = 'b'
+2018-09-07 07:59:39 SELECT u.id, u.name, IFNULL(COUNT(1), 0) AS counter 
+					FROM users u 
+					LEFT JOIN track t ON u.id = t.users_id 
+					WHERE working_status = 1 AND party_given = 1 
+					GROUP BY u.id 
+					ORDER BY u.id ASC
+2018-09-07 07:59:45 SELECT * 
+				FROM users AS u 
+				LEFT JOIN track AS t on u.id = t.users_id 
+				WHERE users_id = 2 
+				AND party_given = 1
+2018-09-07 07:59:45 SELECT * 
+				FROM users AS u 
+				LEFT JOIN track AS t on u.id = t.users_id 
+				WHERE users_id =  
+				AND party_given = 1
+2018-09-07 07:59:57 UPDATE track 
+					SET party_given = 0 
+					WHERE id IN (0)
+2018-09-07 07:59:59 SELECT u.id, u.name, IFNULL(COUNT(1), 0) AS counter 
+					FROM users u 
+					LEFT JOIN track t ON u.id = t.users_id 
+					WHERE working_status = 1 AND party_given = 1 
+					GROUP BY u.id 
+					ORDER BY u.id ASC
+2018-09-07 08:11:34 SELECT u.id, u.name, IFNULL(COUNT(1), 0) AS counter 
+					FROM users u 
+					LEFT JOIN track t ON u.id = t.users_id 
+					WHERE working_status = 1 AND party_given = 1 
+					GROUP BY u.id 
+					ORDER BY u.id ASC
+2018-09-07 08:11:40 select name, email_id,user_type from users where email_id='a'  and pwd = 'a'
+2018-09-07 08:11:40 SELECT u.id, u.name, IFNULL(COUNT(1), 0) AS counter 
+					FROM users u 
+					LEFT JOIN track t ON u.id = t.users_id 
+					WHERE working_status = 1 AND party_given = 1 
+					GROUP BY u.id 
+					ORDER BY u.id ASC
+2018-09-07 08:11:42 SELECT * 
+				FROM users AS u 
+				LEFT JOIN track AS t on u.id = t.users_id 
+				WHERE users_id = 2 
+				AND party_given = 1
+2018-09-07 08:11:42 SELECT * 
+				FROM users AS u 
+				LEFT JOIN track AS t on u.id = t.users_id 
+				WHERE users_id =  
+				AND party_given = 1
+2018-09-07 08:11:43 SELECT u.id, u.name, IFNULL(COUNT(1), 0) AS counter 
+					FROM users u 
+					LEFT JOIN track t ON u.id = t.users_id 
+					WHERE working_status = 1 AND party_given = 1 
+					GROUP BY u.id 
+					ORDER BY u.id ASC
+2018-09-07 08:11:48 select name, email_id,user_type from users where email_id='a'  and pwd = 'a'
+2018-09-07 08:11:48 SELECT u.id, u.name, IFNULL(COUNT(1), 0) AS counter 
+					FROM users u 
+					LEFT JOIN track t ON u.id = t.users_id 
+					WHERE working_status = 1 AND party_given = 1 
+					GROUP BY u.id 
+					ORDER BY u.id ASC
+2018-09-07 08:11:59 select name, email_id,user_type from users where email_id='a'  and pwd = 'a'
+2018-09-07 08:11:59 SELECT u.id, u.name, IFNULL(COUNT(1), 0) AS counter 
+					FROM users u 
+					LEFT JOIN track t ON u.id = t.users_id 
+					WHERE working_status = 1 AND party_given = 1 
+					GROUP BY u.id 
+					ORDER BY u.id ASC
+2018-09-07 08:12:34 select name, email_id,user_type from users where email_id='a'  and pwd = 'a'
+2018-09-07 08:12:34 SELECT u.id, u.name, IFNULL(COUNT(1), 0) AS counter 
+					FROM users u 
+					LEFT JOIN track t ON u.id = t.users_id 
+					WHERE working_status = 1 AND party_given = 1 
+					GROUP BY u.id 
+					ORDER BY u.id ASC
+2018-09-07 08:12:43 select name, email_id,user_type from users where email_id='b'  and pwd = 'b'
+2018-09-07 08:12:43 SELECT u.id, u.name, IFNULL(COUNT(1), 0) AS counter 
+					FROM users u 
+					LEFT JOIN track t ON u.id = t.users_id 
+					WHERE working_status = 1 AND party_given = 1 
+					GROUP BY u.id 
+					ORDER BY u.id ASC
+2018-09-07 08:13:31 select name, email_id,user_type from users where email_id='a'  and pwd = 'a'
+2018-09-07 08:13:31 SELECT u.id, u.name, IFNULL(COUNT(1), 0) AS counter 
+					FROM users u 
+					LEFT JOIN track t ON u.id = t.users_id 
+					WHERE working_status = 1 AND party_given = 1 
+					GROUP BY u.id 
+					ORDER BY u.id ASC
+2018-09-07 08:13:40 SELECT u.id, u.name, IFNULL(COUNT(1), 0) AS counter 
+					FROM users u 
+					LEFT JOIN track t ON u.id = t.users_id 
+					WHERE working_status = 1 AND party_given = 1 
+					GROUP BY u.id 
+					ORDER BY u.id ASC
+2018-09-07 08:13:41 SELECT * FROM users WHERE working_status = 1
+2018-09-07 08:13:48 SELECT u.id, u.name, IFNULL(COUNT(1), 0) AS counter 
+					FROM users u 
+					LEFT JOIN track t ON u.id = t.users_id 
+					WHERE working_status = 1 AND party_given = 1 
+					GROUP BY u.id 
+					ORDER BY u.id ASC
+2018-09-07 08:14:17 SELECT u.id, u.name, IFNULL(COUNT(1), 0) AS counter 
+					FROM users u 
+					LEFT JOIN track t ON u.id = t.users_id 
+					WHERE working_status = 1 AND party_given = 1 
+					GROUP BY u.id 
+					ORDER BY u.id ASC
+2018-09-07 08:14:18 SELECT * FROM users WHERE working_status = 1
+2018-09-07 08:14:36 SELECT u.id, u.name, IFNULL(COUNT(1), 0) AS counter 
+					FROM users u 
+					LEFT JOIN track t ON u.id = t.users_id 
+					WHERE working_status = 1 AND party_given = 1 
+					GROUP BY u.id 
+					ORDER BY u.id ASC
+2018-09-07 10:03:00 SELECT u.id, u.name, IFNULL(COUNT(1), 0) AS counter 
+					FROM users u 
+					LEFT JOIN track t ON u.id = t.users_id 
+					WHERE working_status = 1 AND party_given = 1 
+					GROUP BY u.id 
+					ORDER BY u.id ASC
+2018-09-07 10:03:00 SELECT u.id, u.name, IFNULL(COUNT(1), 0) AS counter 
+					FROM users u 
+					LEFT JOIN track t ON u.id = t.users_id 
+					WHERE working_status = 1 AND party_given = 1 
+					GROUP BY u.id 
+					ORDER BY u.id ASC
+2018-09-07 10:03:00 SELECT u.id, u.name, IFNULL(COUNT(1), 0) AS counter 
+					FROM users u 
+					LEFT JOIN track t ON u.id = t.users_id 
+					WHERE working_status = 1 AND party_given = 1 
+					GROUP BY u.id 
+					ORDER BY u.id ASC
+2018-09-07 10:03:01 SELECT u.id, u.name, IFNULL(COUNT(1), 0) AS counter 
+					FROM users u 
+					LEFT JOIN track t ON u.id = t.users_id 
+					WHERE working_status = 1 AND party_given = 1 
+					GROUP BY u.id 
+					ORDER BY u.id ASC
+2018-09-07 10:03:01 SELECT u.id, u.name, IFNULL(COUNT(1), 0) AS counter 
+					FROM users u 
+					LEFT JOIN track t ON u.id = t.users_id 
+					WHERE working_status = 1 AND party_given = 1 
+					GROUP BY u.id 
+					ORDER BY u.id ASC
+2018-09-07 10:03:01 SELECT u.id, u.name, IFNULL(COUNT(1), 0) AS counter 
+					FROM users u 
+					LEFT JOIN track t ON u.id = t.users_id 
+					WHERE working_status = 1 AND party_given = 1 
+					GROUP BY u.id 
+					ORDER BY u.id ASC
+2018-09-07 10:03:01 SELECT u.id, u.name, IFNULL(COUNT(1), 0) AS counter 
+					FROM users u 
+					LEFT JOIN track t ON u.id = t.users_id 
+					WHERE working_status = 1 AND party_given = 1 
+					GROUP BY u.id 
+					ORDER BY u.id ASC
+2018-09-07 10:03:01 SELECT u.id, u.name, IFNULL(COUNT(1), 0) AS counter 
+					FROM users u 
+					LEFT JOIN track t ON u.id = t.users_id 
+					WHERE working_status = 1 AND party_given = 1 
+					GROUP BY u.id 
+					ORDER BY u.id ASC
+2018-09-07 10:03:02 SELECT u.id, u.name, IFNULL(COUNT(1), 0) AS counter 
+					FROM users u 
+					LEFT JOIN track t ON u.id = t.users_id 
+					WHERE working_status = 1 AND party_given = 1 
+					GROUP BY u.id 
+					ORDER BY u.id ASC
+2018-09-07 10:03:03 SELECT u.id, u.name, IFNULL(COUNT(1), 0) AS counter 
+					FROM users u 
+					LEFT JOIN track t ON u.id = t.users_id 
+					WHERE working_status = 1 AND party_given = 1 
+					GROUP BY u.id 
+					ORDER BY u.id ASC
+2018-09-07 10:03:09 SELECT u.id, u.name, IFNULL(COUNT(1), 0) AS counter 
+					FROM users u 
+					LEFT JOIN track t ON u.id = t.users_id 
+					WHERE working_status = 1 AND party_given = 1 
+					GROUP BY u.id 
+					ORDER BY u.id ASC
+2018-09-07 10:03:12 SELECT u.id, u.name, IFNULL(COUNT(1), 0) AS counter 
+					FROM users u 
+					LEFT JOIN track t ON u.id = t.users_id 
+					WHERE working_status = 1 AND party_given = 1 
+					GROUP BY u.id 
+					ORDER BY u.id ASC
+2018-09-07 10:56:50 SELECT u.id, u.name, IFNULL(COUNT(1), 0) AS counter 
+					FROM users u 
+					LEFT JOIN track t ON u.id = t.users_id 
+					WHERE working_status = 1 AND party_given = 1 
+					GROUP BY u.id 
+					ORDER BY u.id ASC
+2018-09-07 10:56:51 SELECT u.id, u.name, IFNULL(COUNT(1), 0) AS counter 
+					FROM users u 
+					LEFT JOIN track t ON u.id = t.users_id 
+					WHERE working_status = 1 AND party_given = 1 
+					GROUP BY u.id 
+					ORDER BY u.id ASC
+2018-09-07 10:56:51 SELECT u.id, u.name, IFNULL(COUNT(1), 0) AS counter 
+					FROM users u 
+					LEFT JOIN track t ON u.id = t.users_id 
+					WHERE working_status = 1 AND party_given = 1 
+					GROUP BY u.id 
+					ORDER BY u.id ASC
+2018-09-07 10:56:51 SELECT u.id, u.name, IFNULL(COUNT(1), 0) AS counter 
+					FROM users u 
+					LEFT JOIN track t ON u.id = t.users_id 
+					WHERE working_status = 1 AND party_given = 1 
+					GROUP BY u.id 
+					ORDER BY u.id ASC
+2018-09-07 10:56:51 SELECT u.id, u.name, IFNULL(COUNT(1), 0) AS counter 
+					FROM users u 
+					LEFT JOIN track t ON u.id = t.users_id 
+					WHERE working_status = 1 AND party_given = 1 
+					GROUP BY u.id 
+					ORDER BY u.id ASC
+2018-09-07 10:56:52 SELECT u.id, u.name, IFNULL(COUNT(1), 0) AS counter 
+					FROM users u 
+					LEFT JOIN track t ON u.id = t.users_id 
+					WHERE working_status = 1 AND party_given = 1 
+					GROUP BY u.id 
+					ORDER BY u.id ASC
+2018-09-07 10:56:53 SELECT u.id, u.name, IFNULL(COUNT(1), 0) AS counter 
+					FROM users u 
+					LEFT JOIN track t ON u.id = t.users_id 
+					WHERE working_status = 1 AND party_given = 1 
+					GROUP BY u.id 
+					ORDER BY u.id ASC
+2018-09-07 10:57:23 SELECT u.id, u.name, IFNULL(COUNT(1), 0) AS counter 
+					FROM users u 
+					LEFT JOIN track t ON u.id = t.users_id 
+					WHERE working_status = 1 AND party_given = 1 
+					GROUP BY u.id 
+					ORDER BY u.id ASC
+2018-09-07 10:57:37 SELECT u.id, u.name, IFNULL(COUNT(1), 0) AS counter 
+					FROM users u 
+					LEFT JOIN track t ON u.id = t.users_id 
+					WHERE working_status = 1 AND party_given = 1 
+					GROUP BY u.id 
+					ORDER BY u.id ASC
+2018-09-07 10:57:37 SELECT u.id, u.name, IFNULL(COUNT(1), 0) AS counter 
+					FROM users u 
+					LEFT JOIN track t ON u.id = t.users_id 
+					WHERE working_status = 1 AND party_given = 1 
+					GROUP BY u.id 
+					ORDER BY u.id ASC
+2018-09-07 10:57:38 SELECT u.id, u.name, IFNULL(COUNT(1), 0) AS counter 
+					FROM users u 
+					LEFT JOIN track t ON u.id = t.users_id 
+					WHERE working_status = 1 AND party_given = 1 
+					GROUP BY u.id 
+					ORDER BY u.id ASC
+2018-09-07 10:57:38 SELECT u.id, u.name, IFNULL(COUNT(1), 0) AS counter 
+					FROM users u 
+					LEFT JOIN track t ON u.id = t.users_id 
+					WHERE working_status = 1 AND party_given = 1 
+					GROUP BY u.id 
+					ORDER BY u.id ASC
+2018-09-07 10:57:42 select name, email_id,user_type from users where email_id='a'  and pwd = 'a'
+2018-09-07 10:57:42 SELECT u.id, u.name, IFNULL(COUNT(1), 0) AS counter 
+					FROM users u 
+					LEFT JOIN track t ON u.id = t.users_id 
+					WHERE working_status = 1 AND party_given = 1 
+					GROUP BY u.id 
+					ORDER BY u.id ASC
+2018-09-07 10:57:44 SELECT u.id, u.name, IFNULL(COUNT(1), 0) AS counter 
+					FROM users u 
+					LEFT JOIN track t ON u.id = t.users_id 
+					WHERE working_status = 1 AND party_given = 1 
+					GROUP BY u.id 
+					ORDER BY u.id ASC
+2018-09-07 10:57:49 SELECT u.id, u.name, IFNULL(COUNT(1), 0) AS counter 
+					FROM users u 
+					LEFT JOIN track t ON u.id = t.users_id 
+					WHERE working_status = 1 AND party_given = 1 
+					GROUP BY u.id 
+					ORDER BY u.id ASC
+2018-09-07 10:57:52 SELECT u.id, u.name, IFNULL(COUNT(1), 0) AS counter 
+					FROM users u 
+					LEFT JOIN track t ON u.id = t.users_id 
+					WHERE working_status = 1 AND party_given = 1 
+					GROUP BY u.id 
+					ORDER BY u.id ASC
+2018-09-07 10:57:59 SELECT u.id, u.name, IFNULL(COUNT(1), 0) AS counter 
+					FROM users u 
+					LEFT JOIN track t ON u.id = t.users_id 
+					WHERE working_status = 1 AND party_given = 1 
+					GROUP BY u.id 
+					ORDER BY u.id ASC
+2018-09-07 10:58:03 SELECT u.id, u.name, IFNULL(COUNT(1), 0) AS counter 
+					FROM users u 
+					LEFT JOIN track t ON u.id = t.users_id 
+					WHERE working_status = 1 AND party_given = 1 
+					GROUP BY u.id 
+					ORDER BY u.id ASC
+2018-09-07 10:58:08 SELECT u.id, u.name, IFNULL(COUNT(1), 0) AS counter 
+					FROM users u 
+					LEFT JOIN track t ON u.id = t.users_id 
+					WHERE working_status = 1 AND party_given = 1 
+					GROUP BY u.id 
+					ORDER BY u.id ASC
+2018-09-07 10:58:31 select name, email_id,user_type from users where email_id='a'  and pwd = 'a'
+2018-09-07 10:58:31 SELECT u.id, u.name, IFNULL(COUNT(1), 0) AS counter 
+					FROM users u 
+					LEFT JOIN track t ON u.id = t.users_id 
+					WHERE working_status = 1 AND party_given = 1 
+					GROUP BY u.id 
+					ORDER BY u.id ASC
+2018-09-07 10:58:36 SELECT u.id, u.name, IFNULL(COUNT(1), 0) AS counter 
+					FROM users u 
+					LEFT JOIN track t ON u.id = t.users_id 
+					WHERE working_status = 1 AND party_given = 1 
+					GROUP BY u.id 
+					ORDER BY u.id ASC
+2018-09-07 11:03:53 SELECT u.id, u.name, IFNULL(COUNT(1), 0) AS counter 
+					FROM users u 
+					LEFT JOIN track t ON u.id = t.users_id 
+					WHERE working_status = 1 AND party_given = 1 
+					GROUP BY u.id 
+					ORDER BY u.id ASC
+2018-09-07 11:06:37 select name, email_id,user_type from users where email_id='a'  and pwd = 'a'
+2018-09-07 11:06:37 SELECT u.id, u.name, IFNULL(COUNT(1), 0) AS counter 
+					FROM users u 
+					LEFT JOIN track t ON u.id = t.users_id 
+					WHERE working_status = 1 AND party_given = 1 
+					GROUP BY u.id 
+					ORDER BY u.id ASC
+2018-09-07 11:06:40 SELECT u.id, u.name, IFNULL(COUNT(1), 0) AS counter 
+					FROM users u 
+					LEFT JOIN track t ON u.id = t.users_id 
+					WHERE working_status = 1 AND party_given = 1 
+					GROUP BY u.id 
+					ORDER BY u.id ASC
+2018-09-07 11:06:49 select name, email_id,user_type from users where email_id='a'  and pwd = 'a'
+2018-09-07 11:06:49 SELECT u.id, u.name, IFNULL(COUNT(1), 0) AS counter 
+					FROM users u 
+					LEFT JOIN track t ON u.id = t.users_id 
+					WHERE working_status = 1 AND party_given = 1 
+					GROUP BY u.id 
+					ORDER BY u.id ASC
+2018-09-07 11:06:53 select name, email_id,user_type from users where email_id='b'  and pwd = 'b'
+2018-09-07 11:06:53 SELECT u.id, u.name, IFNULL(COUNT(1), 0) AS counter 
+					FROM users u 
+					LEFT JOIN track t ON u.id = t.users_id 
+					WHERE working_status = 1 AND party_given = 1 
+					GROUP BY u.id 
+					ORDER BY u.id ASC
+2018-09-07 11:06:59 select name, email_id,user_type from users where email_id='a'  and pwd = 'a'
+2018-09-07 11:06:59 SELECT u.id, u.name, IFNULL(COUNT(1), 0) AS counter 
+					FROM users u 
+					LEFT JOIN track t ON u.id = t.users_id 
+					WHERE working_status = 1 AND party_given = 1 
+					GROUP BY u.id 
+					ORDER BY u.id ASC
+2018-09-07 11:24:01 select name, email_id,user_type from users where email_id='a'  and pwd = 'a'
+2018-09-07 11:24:01 SELECT u.id, u.name, IFNULL(COUNT(1), 0) AS counter 
+					FROM users u 
+					LEFT JOIN track t ON u.id = t.users_id 
+					WHERE working_status = 1 AND party_given = 1 
+					GROUP BY u.id 
+					ORDER BY u.id ASC
+2018-09-07 11:24:02 SELECT u.id, u.name, IFNULL(COUNT(1), 0) AS counter 
+					FROM users u 
+					LEFT JOIN track t ON u.id = t.users_id 
+					WHERE working_status = 1 AND party_given = 1 
+					GROUP BY u.id 
+					ORDER BY u.id ASC
+2018-09-07 11:24:03 SELECT u.id, u.name, IFNULL(COUNT(1), 0) AS counter 
+					FROM users u 
+					LEFT JOIN track t ON u.id = t.users_id 
+					WHERE working_status = 1 AND party_given = 1 
+					GROUP BY u.id 
+					ORDER BY u.id ASC
+2018-09-07 11:24:04 SELECT u.id, u.name, IFNULL(COUNT(1), 0) AS counter 
+					FROM users u 
+					LEFT JOIN track t ON u.id = t.users_id 
+					WHERE working_status = 1 AND party_given = 1 
+					GROUP BY u.id 
+					ORDER BY u.id ASC
+2018-09-07 11:24:04 SELECT u.id, u.name, IFNULL(COUNT(1), 0) AS counter 
+					FROM users u 
+					LEFT JOIN track t ON u.id = t.users_id 
+					WHERE working_status = 1 AND party_given = 1 
+					GROUP BY u.id 
+					ORDER BY u.id ASC
+2018-09-07 11:24:04 SELECT u.id, u.name, IFNULL(COUNT(1), 0) AS counter 
+					FROM users u 
+					LEFT JOIN track t ON u.id = t.users_id 
+					WHERE working_status = 1 AND party_given = 1 
+					GROUP BY u.id 
+					ORDER BY u.id ASC
+2018-09-07 11:24:05 SELECT u.id, u.name, IFNULL(COUNT(1), 0) AS counter 
+					FROM users u 
+					LEFT JOIN track t ON u.id = t.users_id 
+					WHERE working_status = 1 AND party_given = 1 
+					GROUP BY u.id 
+					ORDER BY u.id ASC
+2018-09-07 11:24:05 SELECT u.id, u.name, IFNULL(COUNT(1), 0) AS counter 
+					FROM users u 
+					LEFT JOIN track t ON u.id = t.users_id 
+					WHERE working_status = 1 AND party_given = 1 
+					GROUP BY u.id 
+					ORDER BY u.id ASC
+2018-09-07 11:24:06 SELECT u.id, u.name, IFNULL(COUNT(1), 0) AS counter 
+					FROM users u 
+					LEFT JOIN track t ON u.id = t.users_id 
+					WHERE working_status = 1 AND party_given = 1 
+					GROUP BY u.id 
+					ORDER BY u.id ASC
+2018-09-07 11:24:06 SELECT u.id, u.name, IFNULL(COUNT(1), 0) AS counter 
+					FROM users u 
+					LEFT JOIN track t ON u.id = t.users_id 
+					WHERE working_status = 1 AND party_given = 1 
+					GROUP BY u.id 
+					ORDER BY u.id ASC
+2018-09-07 11:28:07 select name, email_id,user_type from users where email_id='a'  and pwd = 'a'
+2018-09-07 11:28:07 SELECT u.id, u.name, IFNULL(COUNT(1), 0) AS counter 
+					FROM users u 
+					LEFT JOIN track t ON u.id = t.users_id 
+					WHERE working_status = 1 AND party_given = 1 
+					GROUP BY u.id 
+					ORDER BY u.id ASC
+2018-09-07 11:28:10 SELECT u.id, u.name, IFNULL(COUNT(1), 0) AS counter 
+					FROM users u 
+					LEFT JOIN track t ON u.id = t.users_id 
+					WHERE working_status = 1 AND party_given = 1 
+					GROUP BY u.id 
+					ORDER BY u.id ASC
+2018-09-07 11:28:12 SELECT u.id, u.name, IFNULL(COUNT(1), 0) AS counter 
+					FROM users u 
+					LEFT JOIN track t ON u.id = t.users_id 
+					WHERE working_status = 1 AND party_given = 1 
+					GROUP BY u.id 
+					ORDER BY u.id ASC
+2018-09-07 11:28:13 SELECT u.id, u.name, IFNULL(COUNT(1), 0) AS counter 
+					FROM users u 
+					LEFT JOIN track t ON u.id = t.users_id 
+					WHERE working_status = 1 AND party_given = 1 
+					GROUP BY u.id 
+					ORDER BY u.id ASC
+2018-09-11 11:26:33 select name, email_id,user_type from users where email_id='a'  and pwd = 'a'
+2018-09-11 11:26:34 SELECT u.id, u.name, IFNULL(COUNT(1), 0) AS counter 
+					FROM users u 
+					LEFT JOIN track t ON u.id = t.users_id 
+					WHERE working_status = 1 AND party_given = 1 
+					GROUP BY u.id 
+					ORDER BY u.id ASC
+2018-09-11 11:27:41 SELECT u.id, u.name, IFNULL(COUNT(1), 0) AS counter 
+					FROM users u 
+					LEFT JOIN track t ON u.id = t.users_id 
+					WHERE working_status = 1 AND party_given = 1 
+					GROUP BY u.id 
+					ORDER BY u.id ASC
+2018-09-11 11:27:42 SELECT u.id, u.name, IFNULL(COUNT(1), 0) AS counter 
+					FROM users u 
+					LEFT JOIN track t ON u.id = t.users_id 
+					WHERE working_status = 1 AND party_given = 1 
+					GROUP BY u.id 
+					ORDER BY u.id ASC
+2018-09-11 11:27:48 select name, email_id,user_type from users where email_id='a'  and pwd = 'a'
+2018-09-11 11:27:48 SELECT u.id, u.name, IFNULL(COUNT(1), 0) AS counter 
+					FROM users u 
+					LEFT JOIN track t ON u.id = t.users_id 
+					WHERE working_status = 1 AND party_given = 1 
+					GROUP BY u.id 
+					ORDER BY u.id ASC
+2018-09-11 11:28:15 SELECT u.id, u.name, IFNULL(COUNT(1), 0) AS counter 
+					FROM users u 
+					LEFT JOIN track t ON u.id = t.users_id 
+					WHERE working_status = 1 AND party_given = 1 
+					GROUP BY u.id 
+					ORDER BY u.id ASC
+2018-09-11 11:28:30 SELECT * 
+				FROM users AS u 
+				LEFT JOIN track AS t on u.id = t.users_id 
+				WHERE users_id = 2 
+				AND party_given = 1
+2018-09-11 11:28:30 SELECT * 
+				FROM users AS u 
+				LEFT JOIN track AS t on u.id = t.users_id 
+				WHERE users_id =  
+				AND party_given = 1
+2018-09-11 11:28:51 UPDATE track 
+					SET party_given = 0 
+					WHERE id IN (0)
+2018-09-11 13:19:05 SELECT u.id, u.name, IFNULL(COUNT(1), 0) AS counter 
+					FROM users u 
+					LEFT JOIN track t ON u.id = t.users_id 
+					WHERE working_status = 1 AND party_given = 1 
+					GROUP BY u.id 
+					ORDER BY u.id ASC
+2018-09-11 13:19:24 SELECT u.id, u.name, IFNULL(COUNT(1), 0) AS counter 
+					FROM users u 
+					LEFT JOIN track t ON u.id = t.users_id 
+					WHERE working_status = 1 AND party_given = 1 
+					GROUP BY u.id 
+					ORDER BY u.id ASC
+2018-09-11 13:19:24 SELECT u.id, u.name, IFNULL(COUNT(1), 0) AS counter 
+					FROM users u 
+					LEFT JOIN track t ON u.id = t.users_id 
+					WHERE working_status = 1 AND party_given = 1 
+					GROUP BY u.id 
+					ORDER BY u.id ASC
+2018-09-11 13:19:24 SELECT u.id, u.name, IFNULL(COUNT(1), 0) AS counter 
+					FROM users u 
+					LEFT JOIN track t ON u.id = t.users_id 
+					WHERE working_status = 1 AND party_given = 1 
+					GROUP BY u.id 
+					ORDER BY u.id ASC
+2018-09-11 13:19:36 SELECT u.id, u.name, IFNULL(COUNT(1), 0) AS counter 
+					FROM users u 
+					LEFT JOIN track t ON u.id = t.users_id 
+					WHERE working_status = 1 AND party_given = 1 
+					GROUP BY u.id 
+					ORDER BY u.id ASC
+2018-09-11 13:19:37 SELECT u.id, u.name, IFNULL(COUNT(1), 0) AS counter 
+					FROM users u 
+					LEFT JOIN track t ON u.id = t.users_id 
+					WHERE working_status = 1 AND party_given = 1 
+					GROUP BY u.id 
+					ORDER BY u.id ASC
+2018-09-11 13:19:37 SELECT u.id, u.name, IFNULL(COUNT(1), 0) AS counter 
+					FROM users u 
+					LEFT JOIN track t ON u.id = t.users_id 
+					WHERE working_status = 1 AND party_given = 1 
+					GROUP BY u.id 
+					ORDER BY u.id ASC
+2018-09-11 13:19:37 SELECT u.id, u.name, IFNULL(COUNT(1), 0) AS counter 
+					FROM users u 
+					LEFT JOIN track t ON u.id = t.users_id 
+					WHERE working_status = 1 AND party_given = 1 
+					GROUP BY u.id 
+					ORDER BY u.id ASC
+2018-09-11 13:19:37 SELECT u.id, u.name, IFNULL(COUNT(1), 0) AS counter 
+					FROM users u 
+					LEFT JOIN track t ON u.id = t.users_id 
+					WHERE working_status = 1 AND party_given = 1 
+					GROUP BY u.id 
+					ORDER BY u.id ASC
