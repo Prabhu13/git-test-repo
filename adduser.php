@@ -8,7 +8,8 @@
 
 <body>
 		<?php 
-			if($_SESSION['loggedIn']) {
+//this is the best method for it
+		if($_SESSION['loggedIn']) {
 				include_once('/common/logout.php'); 
 			}
 			else {
