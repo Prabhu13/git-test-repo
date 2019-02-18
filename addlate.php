@@ -8,8 +8,10 @@
 
 <body>
 		<?php 
-			if($_SESSION['loggedIn']) {
-				include_once('/common/logout.php'); 
+	               		if($_SESSION['loggedIn']) {
+			
+			//I wanted to include this logout.php
+					include_once('/common/logout.php'); 
 			}
 			else {
 		header("Location: /Party/login.php");
