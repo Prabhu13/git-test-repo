@@ -1,0 +1,1 @@
+Party as a Punishment tracker is a website that lists all users to basic user and admin users can add delete update lists of late comers. Also admin can change users type.
